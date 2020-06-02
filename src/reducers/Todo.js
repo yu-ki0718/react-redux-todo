@@ -1,5 +1,5 @@
 const initialState = {
-  todolist: [],
+  todoList: [],
 };
 
 export const todoReducer = (state = initialState, action) => {
@@ -7,7 +7,7 @@ export const todoReducer = (state = initialState, action) => {
     case "ADD_TODO":
       const todo = action.payload.todo;
       const newState = Object.assign({}, state);
-      newState.todolist.push(todo);
+      newState.todoList.push(todo);
       return newState;
     default:
       return state;
